@@ -31,5 +31,8 @@
     "serverless-offline": "^3.17.0",
     "serverless-webpack": "^4.3.0",
     "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "moment": "^2.20.1"
   }
 }
