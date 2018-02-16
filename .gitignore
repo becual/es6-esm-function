@@ -9,3 +9,4 @@ jspm_packages
 .vscode
 .idea
 *npm-debug.log
+.webpack
