@@ -1,0 +1,17 @@
+service: es6-esm-function
+
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          method: get
+          path: es6-esm

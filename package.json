@@ -1,0 +1,35 @@
+{
+  "name": "es6-esm-function",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava -v",
+    "test:watch": "ava -v -w"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "polyfill": false,
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "serverless-offline": "^3.17.0",
+    "serverless-webpack": "^4.3.0",
+    "webpack": "^3.11.0"
+  }
+}
